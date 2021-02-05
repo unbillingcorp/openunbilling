@@ -9,3 +9,5 @@ Para ello disponemos de un metodo simple, sencillo y abierto soportado bajo OneD
 De parte de los providers, desarrolladores de software o ISV, entregamos una manera documentada a través de este repositorio de GitHub para que construyan las interfaces requeridas, las cuales pueden trabajar tanto en línea como por lotes para el envío de los comprobantes electrónicos a la plataforma Unbilling, de manera tal de no tener que lidiar con los estándares y procesos internos con el Ministerio de Hacienda, asi como también evitar la necesidad de realizar desarrollos mucho más elaborados para lidiar con la gestión de factura electrónica en Costa Rica, contando para ello del soporte backend de Unbilling.
 
 
+# Esquema propuesto
+
