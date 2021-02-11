@@ -384,7 +384,7 @@ El detalle de los datos de cada artículo en el listado, es el siguiente:
 - Precio unitario del producto/servicio. ( Número decimal con "." como separador de decimales y "," como separador de miles )
 - Unidad de medida ( Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 15 )
 - Código: Se refiere al código Cabys, definido por el Ministerio de Hacienda para los Bienes y Servicios.
-- Descuento: Detalle del descuento aplicado al producto/servicio.
+- Descuento: Listado con el Detalle del(los) descuento(s) que aplica(n) al artículo o servicio. La estructura para cada descuento, debe estar definido entre "<...>". Los valores esperados, para cada descuento, son los siguientes:
 	Monto del descuento ( Número decimal con "." como separador de decimales y "," como separador de miles )
 	Descripción del descuento ( Cadena de caracteres )
 - Código Comercial del producto/servicio
@@ -395,7 +395,7 @@ El detalle de los datos de cada artículo en el listado, es el siguiente:
 	  "03" - Código del producto asignado por la industria
 	  "04" - Código uso interno
 	  "99" - Otros
-- Impuesto: Es un listado con el Detalle del(los) impuesto(s) que aplica(n) al artículo o servicio. La estructura para cada impuesto definido, debe estar definido entre "<...>".
+- Impuesto: Es un listado con el Detalle del(los) impuesto(s) que aplica(n) al artículo o servicio. La estructura para cada impuesto, debe estar definido entre "<...>".
 Los valores que se esperan, por cada impuesto, son los siguientes:
 	Código de impuesto: que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres ) 
 		"01" - Impuesto al Valor Agregado
@@ -424,10 +424,10 @@ Ejemplo de contenido esperado.
 Factura con un artículo.
 
 Consecutivo, Receptor, CondicionVenta, MedioPago, TipoComprobante, Moneda, Productos
-10, Juan|"01"|"303330444"|"juan@gmail.com"|506|88990000, "01", "02", FA, "CRC"|1, {2|Producto de prueba 1|100.00|Unid|2820203010100|20.00|Descuento promo|ART 2001-15|"01"|<"01"|"08"|13.00>}
+10, Juan|"01"|"303330444"|"juan@gmail.com"|506|88990000, "01", "02", FA, "CRC"|1, {2|Producto de prueba 1|100.00|Unid|2820203010100|<20.00|Descuento promo>|ART 2001-15|"01"|<"01"|"08"|13.00>}
 
 Tiquete con dos artículos.
 
 Consecutivo, Receptor, CondicionVenta, MedioPago, TipoComprobante, Moneda, Productos
-20, , "02", "01", TI, "USD"|602.55, {2|Producto de prueba 1|100.00|Unid|2820203010100|20.00|Descuento promo|ART 2001-15|"01"|<"01"|"08"|13.00>}{1|Producto de prueba 2|100.00|Unid|2820203010100|10.00|Descuento promo|ART 2001-05|"01"|<"01"|"08"|13.00>}
+20, , "02", "01", TI, "USD"|602.55, {2|Producto de prueba 1|100.00|Unid|2820203010100|<20.00|Descuento promo>|ART 2001-15|"01"|<"01"|"08"|13.00>}{1|Producto de prueba 2|100.00|Unid|2820203010100|<10.00|Descuento promo>|ART 2001-05|"01"|<"01"|"08"|13.00>}
 
