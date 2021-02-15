@@ -102,7 +102,7 @@ Ejemplo de datos esperados:
 En esta sección del archivo se define el listado de los productos o servicios, que conforman el comprobante y que van a ser enviados al Ministerio de Hacienda.
 El detalle de los datos de cada artículo en el listado, es el siguiente:
 
-- Cantidad: Cantidad vendida del artículo o del servicio prestado. ( Número entero ).
+- Cantidad: Cantidad vendida del artículo o del servicio prestado. ( Número decimal con "." como separador de decimales y "," como separador de miles ).
 - Detalle: Descripción del artículo o servicio prestado ( Cadena de caracteres )
 - Precio unitario del producto/servicio. ( Número decimal con "." como separador de decimales y "," como separador de miles )
 - Unidad de medida ( Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 15 )
@@ -144,7 +144,7 @@ Los valores que se esperan, por cada impuesto, son los siguientes:
 
 Ejemplo del formato: 
 "Productos": [{
-                "Cantidad": XX,
+                "Cantidad": XX.XX,
                 "Detalle": "",
                 "PrecioUnitario": XXX.XX,
                 "UnidadMedida": "",
@@ -169,7 +169,7 @@ Ejemplo del formato:
 
 Ejemplo de datos esperados: 
  "Productos": [{
-                "Cantidad": 2,
+                "Cantidad": 2.00,
                 "Detalle": "Este es un producto de prueba",
                 "PrecioUnitario": 100.00,
                 "UnidadMedida": "Unid",
@@ -216,7 +216,7 @@ Factura con un artículo.
             "TipoCambio": 1
         },
         "Productos": [{
-                "Cantidad": 2,
+                "Cantidad": 2.00,
                 "Detalle": "Este es un producto de prueba",
                 "PrecioUnitario": 100.00,
                 "UnidadMedida": "Unid",
@@ -253,7 +253,7 @@ Tiquete con dos artículos.
             "TipoCambio": 602.55
         },
         "Productos": [{
-                "Cantidad": 2,
+                "Cantidad": 2.00,
                 "Detalle": "Este es un producto de prueba",
                 "PrecioUnitario": 100.00,
                 "UnidadMedida": "Unid",
@@ -274,7 +274,7 @@ Tiquete con dos artículos.
                     }
                 ]
             }, {
-                "Cantidad": 1,
+                "Cantidad": 1.00,
                 "Detalle": "Este es otro producto de prueba",
                 "PrecioUnitario": 100.00,
                 "UnidadMedida": "Unid",
@@ -379,7 +379,7 @@ En esta columna se espera el listado de los productos o servicios, que conforman
 
 El detalle de los datos de cada artículo en el listado, es el siguiente:
 
-- Cantidad: Cantidad vendida del artículo o del servicio prestado. ( Número entero ).
+- Cantidad: Cantidad vendida del artículo o del servicio prestado. ( Número decimal con "." como separador de decimales y "," como separador de miles ).
 - Detalle: Descripción del artículo o servicio prestado ( Cadena de caracteres )
 - Precio unitario del producto/servicio. ( Número decimal con "." como separador de decimales y "," como separador de miles )
 - Unidad de medida ( Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 15 )
@@ -424,10 +424,10 @@ Ejemplo de contenido esperado.
 Factura con un artículo.
 
 Consecutivo, Receptor, CondicionVenta, MedioPago, TipoComprobante, Moneda, Productos
-10, Juan|"01"|"303330444"|"juan@gmail.com"|506|88990000, "01", "02", FA, "CRC"|1, {2|Producto de prueba 1|100.00|Unid|2820203010100|<20.00|Descuento promo>|ART 2001-15|"01"|<"01"|"08"|13.00>}
+10, Juan|"01"|"303330444"|"juan@gmail.com"|506|88990000, "01", "02", FA, "CRC"|1, {2.00|Producto de prueba 1|100.00|Unid|2820203010100|<20.00|Descuento promo>|ART 2001-15|"01"|<"01"|"08"|13.00>}
 
 Tiquete con dos artículos.
 
 Consecutivo, Receptor, CondicionVenta, MedioPago, TipoComprobante, Moneda, Productos
-20, , "02", "01", TI, "USD"|602.55, {2|Producto de prueba 1|100.00|Unid|2820203010100|<20.00|Descuento promo>|ART 2001-15|"01"|<"01"|"08"|13.00>}{1|Producto de prueba 2|100.00|Unid|2820203010100|<10.00|Descuento promo>|ART 2001-05|"01"|<"01"|"08"|13.00>}
+20, , "02", "01", TI, "USD"|602.55, {2.00|Producto de prueba 1|100.00|Unid|2820203010100|<20.00|Descuento promo>|ART 2001-15|"01"|<"01"|"08"|13.00>}{1.00|Producto de prueba 2|100.00|Unid|2820203010100|<10.00|Descuento promo>|ART 2001-05|"01"|<"01"|"08"|13.00>}
 
