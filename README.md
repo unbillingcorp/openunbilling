@@ -108,11 +108,11 @@ El detalle de los datos de cada artículo en el listado, es el siguiente:
 - Unidad de medida ( Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 15 )
 - Código: Se refiere al código Cabys, definido por el Ministerio de Hacienda para los Bienes y Servicios.
 - Descuento: Estructura que define el detalle del descuento aplicado al producto/servicio.
-	Monto del descuento ( Número decimal con "." como separador de decimales y "," como separador de miles )
-	Descripción del descuento ( Cadena de caracteres )
+	- Monto del descuento ( Número decimal con "." como separador de decimales y "," como separador de miles )
+	- Descripción del descuento ( Cadena de caracteres )
 - Código Comercial del producto/servicio
-	Código: Descripción del código del producto/servicio. ( Cadena de caracteres )
-	Tipo de código que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres )
+	- Código: Descripción del código del producto/servicio. ( Cadena de caracteres )
+	- Tipo de código que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres )
 	  "01" - Código del producto del vendedor
 	  "02" - Código del producto del comprador
 	  "03" - Código del producto asignado por la industria
@@ -385,11 +385,11 @@ El detalle de los datos de cada artículo en el listado, es el siguiente:
 - Unidad de medida ( Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 15 )
 - Código: Se refiere al código Cabys, definido por el Ministerio de Hacienda para los Bienes y Servicios.
 - Descuento: Listado con el Detalle del(los) descuento(s) que aplica(n) al artículo o servicio. La estructura para cada descuento, debe estar definido entre "<...>". Los valores esperados, para cada descuento, son los siguientes:
-	Monto del descuento ( Número decimal con "." como separador de decimales y "," como separador de miles )
-	Descripción del descuento ( Cadena de caracteres )
+	- Monto del descuento ( Número decimal con "." como separador de decimales y "," como separador de miles )
+	- Descripción del descuento ( Cadena de caracteres )
 - Código Comercial del producto/servicio
-	Código: Descripción del código del producto/servicio. ( Cadena de caracteres )
-	Tipo de código que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres )
+	- Código: Descripción del código del producto/servicio. ( Cadena de caracteres )
+	- Tipo de código que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres )
 	  "01" - Código del producto del vendedor
 	  "02" - Código del producto del comprador
 	  "03" - Código del producto asignado por la industria
@@ -397,7 +397,7 @@ El detalle de los datos de cada artículo en el listado, es el siguiente:
 	  "99" - Otros
 - Impuesto: Es un listado con el Detalle del(los) impuesto(s) que aplica(n) al artículo o servicio. La estructura para cada impuesto, debe estar definido entre "<...>".
 Los valores que se esperan, por cada impuesto, son los siguientes:
-	Código de impuesto: que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres ) 
+	- Código de impuesto: que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres ) 
 		"01" - Impuesto al Valor Agregado
 		"02" - Impuesto Selectivo de Consumo
 		"03" - Impuesto Único a los Combustibles
@@ -408,7 +408,7 @@ Los valores que se esperan, por cada impuesto, son los siguientes:
 		"08" - IVA Régimen de Bienes Usados (Factor)
 		"12" - Impuesto Específico al Cemento
 		"99" - Otros
-	Código de Tarifa: que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres . Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 8.1 )
+	- Código de Tarifa: que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: ( Cadena de 2 caracteres . Basado en el archivo "ANEXOS Y ESTRUCTURAS_V4.3.pdf" del Ministerio de Hacienda. Nota 8.1 )
 		"01" - Tarifa 0% (Exento)
 		"02" - Tarifa reducida 1%
 		"03" - Tarifa reducida 2%
@@ -417,7 +417,7 @@ Los valores que se esperan, por cada impuesto, son los siguientes:
 		"06" - Transitorio 4%
 		"07" - Transitorio 8%
 		"08" - Tarifa general 13%
-	Tarifa: Se toma del valor del porcentaje de la tabla que define el Código de Tarifa. ( Número decimal con "." como separador de decimales y "," como separador de miles )
+	- Tarifa: Se toma del valor del porcentaje de la tabla que define el Código de Tarifa. ( Número decimal con "." como separador de decimales y "," como separador de miles )
 
 Ejemplo de contenido esperado.
 
