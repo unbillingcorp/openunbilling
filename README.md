@@ -33,7 +33,7 @@ El formato esperado es:
 {
 	"Nombre": "....",
 	"TipoIdentificacion": "",
-	"Identificacion": "",
+	"NumeroIdentificacion": "",
 	"Correo": "",
 	"CodigoPaisTelefono": XXX,
 	"Telefono": XXXXXXXX
@@ -44,7 +44,7 @@ Ejemplo de datos para esta columna es:
 {
 	"Nombre": "juan",
 	"TipoIdentificacion": "01",
-	"Identificacion": "303330444",
+	"NumeroIdentificacion": "303330444",
 	"Correo": "juan@correo.com",
 	"CodigoPaisTelefono": 506,
 	"Telefono": 22334455
