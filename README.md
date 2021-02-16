@@ -52,31 +52,31 @@ Ejemplo de datos para esta columna es:
 
 3. Condición de Venta ( Tipo del dato: Cadena de 2 caracteres )
 Corresponde al Código de la condición de venta, que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: 
-"01" - Contado 
-"02" - Crédito
-"03" - Consignación
-"04" - Apartado
-"05" - Arrendamiento con opción de compra
-"06" - Arrendamiento en función financiera
-"07" - Cobro a favor de un tercero
-"08" - Servicios prestados al Estado a crédito
-"09" - Pago del servicios prestado al Estado
-"99" - Otros (se debe indicar la condición de la venta)
+- "01" - Contado 
+- "02" - Crédito
+- "03" - Consignación
+- "04" - Apartado
+- "05" - Arrendamiento con opción de compra
+- "06" - Arrendamiento en función financiera
+- "07" - Cobro a favor de un tercero
+- "08" - Servicios prestados al Estado a crédito
+- "09" - Pago del servicios prestado al Estado
+- "99" - Otros (se debe indicar la condición de la venta)
 
 4. Medio de pago  ( Tipo del dato: Cadena de 2 caracteres )
 Corresponde al Código del medio de pago, que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: 
-"01" - Efectivo
-"02" - Tarjeta
-"03" - Cheque
-"04" - Transferencia – depósito bancario
-"05" - Recaudado por terceros
-"99" - Otros (se debe indicar el medio de pago)
+- "01" - Efectivo
+- "02" - Tarjeta
+- "03" - Cheque
+- "04" - Transferencia – depósito bancario
+- "05" - Recaudado por terceros
+- "99" - Otros (se debe indicar el medio de pago)
 
 5. Tipo de comprobante ( Tipo del dato: Cadena de 2 caracteres )
 Indica el tipo de comprobante que se debe emitir, para la línea correspondiente.
 Los valores esperados son: 
-"FA": factura
-"TI": tiquete
+- "FA": factura
+- "TI": tiquete
 
 6. Moneda del comprobante ( Tipo del dato: Objeto con propiedades )
 Datos de la moneda en la cual se está realizando la transacción y que se va a registrar en el comprobante respectivo. 
@@ -336,31 +336,31 @@ Juan Pérez|"01"|"303330444"|"juan@gmail.com"|506|88990000
 
 3. Condición de Venta ( Tipo del dato: Cadena de 2 caracteres )
 Corresponde al Código de la condición de venta, que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: 
-"01" - Contado 
-"02" - Crédito
-"03" - Consignación
-"04" - Apartado
-"05" - Arrendamiento con opción de compra
-"06" - Arrendamiento en función financiera
-"07" - Cobro a favor de un tercero
-"08" - Servicios prestados al Estado a crédito
-"09" - Pago del servicios prestado al Estado
-"99" - Otros (se debe indicar la condición de la venta)
+- "01" - Contado 
+- "02" - Crédito
+- "03" - Consignación
+- "04" - Apartado
+- "05" - Arrendamiento con opción de compra
+- "06" - Arrendamiento en función financiera
+- "07" - Cobro a favor de un tercero
+- "08" - Servicios prestados al Estado a crédito
+- "09" - Pago del servicios prestado al Estado
+- "99" - Otros (se debe indicar la condición de la venta)
 
 4. Medio de pago  ( Tipo del dato: Cadena de 2 caracteres )
 Corresponde al Código del medio de pago, que ha sido definido por el Ministerio de Hacienda, según los siguiente valores: 
-"01" - Efectivo
-"02" - Tarjeta
-"03" - Cheque
-"04" - Transferencia – depósito bancario
-"05" - Recaudado por terceros
-"99" - Otros (se debe indicar el medio de pago)
+- "01" - Efectivo
+- "02" - Tarjeta
+- "03" - Cheque
+- "04" - Transferencia – depósito bancario
+- "05" - Recaudado por terceros
+- "99" - Otros (se debe indicar el medio de pago)
 
 5. Tipo de comprobante ( Tipo del dato: Cadena de 2 caracteres )
 Indica el tipo de comprobante que se debe emitir, para la línea correspondiente.
 Los valores esperados son: 
-"FA": factura
-"TI": tiquete
+- "FA": factura
+- "TI": tiquete
 
 6. Moneda del comprobante ( Tipo del dato: Cadena de caracteres )
 Datos de la moneda en la cual se está realizando la transacción y que se va a registrar en el comprobante respectivo. Los datos enviados, deben venir separados por el caracter "|".
